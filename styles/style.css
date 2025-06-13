@@ -43,6 +43,7 @@
   /* SPACING */
   --space-sections: 30px;
   --space-cards: 15px;
+  --space-section-padding: 165px;
 }
 
 /* RESETTING DEFAULT STYLES */
@@ -58,8 +59,10 @@
 body {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sections);
+  /* gap: var(--space-sections); */
   font-family: var(--font-body-text);
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 h1,
@@ -135,4 +138,57 @@ button:hover {
 .nav-links {
   text-decoration: none;
   padding-bottom: 26px;
+}
+
+/* HERO SECTION */
+.hero-section {
+  padding: var(--space-section-padding);
+  background-image: url('../public/BackgroundImage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section img {
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+}
+
+.banner-titles {
+  font-weight: var(--font-weight-bold);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-cards);
+}
+
+.banner-titles p {
+  font-size: var(--body-regular-size);
+}
+
+.CTA-buttons {
+  position: absolute;
+  bottom: var(--space-sections);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-cards);
+}
+
+.CTA-buttons .donate-now {
+  background-color: var(--text-dark);
+  color: var(--color-background);
+}
+
+.CTA-buttons .learn-more {
+  background-color: rgba(231, 111, 81, 0.25);
+  border: 2px solid var(--text-dark);
 }
