@@ -70,6 +70,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
 }
 
 ul,
@@ -142,7 +143,7 @@ button:hover {
 
 /* HERO SECTION */
 .hero-section {
-  padding: var(--space-section-padding);
+  padding: 0 var(--space-section-padding);
   background-image: url('../public/BackgroundImage.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -191,4 +192,37 @@ button:hover {
 .CTA-buttons .learn-more {
   background-color: rgba(231, 111, 81, 0.25);
   border: 2px solid var(--text-dark);
+}
+
+/* STATS SECTION */
+
+.stats-section {
+  margin-top: var(--space-cards);
+  padding: 0 var(--space-section-padding);
+}
+
+.stats-cards {
+  margin-top: var(--space-cards);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-cards);
+}
+
+.stats-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-cards h4,
+.stats-cards p {
+  align-self: flex-start;
+}
+
+.stats-cards p {
+  text-align: center;
+}
+
+.text-highlight {
+  color: var(--color-primary);
 }
