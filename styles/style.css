@@ -46,6 +46,9 @@
   --space-sections: 30px;
   --space-cards: 15px;
   --space-section-padding: 165px;
+
+  /* CONTAINER SIZES */
+  --base-button-size: 165px;
 }
 
 /* RESETTING DEFAULT STYLES */
@@ -92,7 +95,7 @@ a:active {
 }
 
 button {
-  width: 165px;
+  width: var(--base-button-size);
   height: 48px;
   border: none;
   border-radius: 8px;
@@ -331,4 +334,23 @@ button:hover {
 
 .team-card-description {
   text-align: center;
+}
+
+/* PARTNERS SECTION */
+
+.partners-section {
+  margin-top: var(--space-sections);
+}
+
+.partner-logos {
+  padding: 0 var(--space-section-padding);
+  margin-top: var(--space-sections);
+  display: flex;
+  gap: var(--space-cards);
+  justify-content: space-between;
+}
+
+.partner-logos img {
+  width: 165px;
+  height: auto;
 }
