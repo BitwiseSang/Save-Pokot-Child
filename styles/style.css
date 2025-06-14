@@ -3,7 +3,9 @@
 :root {
   /* COLORS */
   --color-primary: #e76f51;
+  --color-primary-light: rgba(231, 111, 81, 0.25);
   --color-accent: #f4a261;
+  --color-accent-light: rgba(244, 162, 97, 0.25);
   --color-secondary: #2a9d8f;
   --color-background: #ffffff;
   --color-dark-orange: #d45c3d;
@@ -190,7 +192,7 @@ button:hover {
 }
 
 .CTA-buttons .learn-more {
-  background-color: rgba(231, 111, 81, 0.25);
+  background-color: var(--color-primary-light);
   border: 2px solid var(--text-dark);
 }
 
@@ -275,4 +277,58 @@ button:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+/* TEAM INFO SECTION */
+
+.team-info-section {
+  margin-top: var(--space-sections);
+}
+
+.team-cards-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--space-cards);
+}
+
+.team-cards:first-child {
+  margin-top: var(--space-sections);
+}
+
+.team-cards {
+  padding: 0 var(--space-section-padding);
+  display: flex;
+  gap: var(--space-cards);
+}
+
+.team-card {
+  background-color: var(--color-accent-light);
+  padding: var(--space-cards);
+  height: 460px;
+  border-radius: var(--space-cards);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-cards);
+  justify-content: center;
+  align-items: center;
+}
+
+.team-card-photo {
+  width: 160px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.team-card-titles {
+  text-align: center;
+}
+
+.team-card-title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--body-regular-size);
+  margin-bottom: 8px;
+}
+
+.team-card-description {
+  text-align: center;
 }
