@@ -443,6 +443,7 @@ button:hover {
 }
 
 .get-involved-banner {
+  margin-top: var(--space-sections);
   color: white;
   background-image: url(../public/donate.png);
   padding: var(--space-sections) 0;
@@ -464,6 +465,7 @@ button:hover {
 }
 
 /* FOOTER */
+
 footer {
   color: var(--color-background);
   padding: var(--space-sections) var(--space-section-padding);
