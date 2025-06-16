@@ -78,6 +78,18 @@ h4 {
   font-weight: var(--font-weight-bold);
 }
 
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
 h4 {
   font-size: var(--h4-size);
 }
@@ -449,4 +461,82 @@ button:hover {
   color: white;
   width: 345px;
   background-color: var(--color-primary);
+}
+
+/* FOOTER */
+footer {
+  color: var(--color-background);
+  padding: var(--space-sections) var(--space-section-padding);
+  margin-top: var(--space-sections);
+  background-color: var(--text-dark);
+}
+
+footer h3 {
+  margin-bottom: var(--space-cards);
+}
+
+.footer-nav-links {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+.footer-nav-links:link,
+.footer-nav-links:visited,
+.footer-nav-links:active {
+  color: var(--color-background);
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links-container {
+  display: flex;
+  gap: var(--space-sections);
+}
+
+footer label {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+  display: block;
+  color: var(--color-background);
+  margin-bottom: 8px;
+}
+
+footer input {
+  font-weight: var(--font-weight-bold);
+  border: none;
+  border-radius: 8px;
+  height: 48px;
+  width: 255px;
+}
+
+footer button {
+  color: white;
+  background-color: var(--color-secondary);
+}
+
+footer input:focus {
+  color: white;
+  background: var(--color-accent-light);
+  outline: none;
+  border: 1px solid var(--color-accent);
+}
+
+.newsletter-input {
+  display: flex;
+  gap: var(--space-cards);
+}
+
+hr {
+  border: 2px solid var(--color-background);
+  margin: var(--space-sections) 0;
+}
+
+.footer-company-copyright {
+  display: flex;
+  gap: var(--space-sections);
+  justify-content: space-between;
 }
